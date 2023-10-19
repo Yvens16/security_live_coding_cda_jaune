@@ -1,6 +1,5 @@
 package com.example.security_live_coding;
 
-import java.security.Key;
 import java.util.Date;
 
 import javax.crypto.SecretKey;
