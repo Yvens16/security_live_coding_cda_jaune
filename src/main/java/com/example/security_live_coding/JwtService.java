@@ -60,8 +60,8 @@ public class JwtService {
     return role;
   }
 
-  public Boolean isValid(String token) {
-    Boolean isValid = getExpirationDate(token).after(new Date()) && getSubject(token).equals("Aurélien");
+  public Boolean isValid(String token, String usernameInDB) {
+    Boolean isValid = getExpirationDate(token).after(new Date()) && getSubject(token).equals(usernameInDB);
     return isValid;
   }
 
